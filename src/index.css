@@ -202,4 +202,70 @@ body {
       overflow: hidden;
       border-top: 1px solid rgba(0, 0, 0, 0.1); }
 
+.smartisan-APPs {
+  height: 420px;
+  margin-top: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden; }
+  .smartisan-APPs .container {
+    height: 60px;
+    display: flex;
+    width: 1220px;
+    justify-content: space-between;
+    background: #fafafa; }
+    .smartisan-APPs .container h5 {
+      line-height: 60px;
+      font-size: 100%;
+      font-weight: 400;
+      padding-left: 30px; }
+    .smartisan-APPs .container .all-apps {
+      line-height: 60px;
+      background: #fafafa;
+      font-size: 100%;
+      font-weight: 400;
+      padding-right: 15px; }
+  .smartisan-APPs .wrapper {
+    display: flex; }
+    .smartisan-APPs .wrapper a {
+      width: 305px;
+      border-left: 1px solid rgba(0, 0, 0, 0.1);
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    .smartisan-APPs .wrapper a:nth-child(1) {
+      border-left: none; }
+
+.forum-selection {
+  height: 422px;
+  margin-top: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden; }
+  .forum-selection .container {
+    height: 60px;
+    display: flex;
+    width: 1220px;
+    justify-content: space-between;
+    background: #fafafa; }
+    .forum-selection .container h5 {
+      line-height: 60px;
+      font-size: 100%;
+      font-weight: 400;
+      padding-left: 30px; }
+    .forum-selection .container .go-to-forum {
+      line-height: 60px;
+      background: #fafafa;
+      font-size: 100%;
+      font-weight: 400;
+      padding-right: 15px; }
+  .forum-selection .wrapper {
+    display: flex; }
+    .forum-selection .wrapper a {
+      width: 305px;
+      border-left: 1px solid rgba(0, 0, 0, 0.1);
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    .forum-selection .wrapper a:nth-child(1) {
+      border-left: none; }
+
 /*# sourceMappingURL=index.css.map */
