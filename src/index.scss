@@ -8,6 +8,7 @@ $bg-gray: #EDEDED;
 
 body {
     background: $bg-gray;
+    font-family: PingFang SC,Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Microsoft Yahei,\\5FAE\8F6F\96C5\9ED1,STHeiti,\\534E\6587\7EC6\9ED1,sans-serif;   
 }
 
 //.nav-global
@@ -94,17 +95,20 @@ body {
     margin: 27px 0;
     border-radius: 4px;
     overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .hot-commodity {
     height: 490px;
-    border: 1px solid red;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     h5 {
         line-height: 60px;
-        font-family: PingFang SC,Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Microsoft Yahei,\\5FAE\8F6F\96C5\9ED1,STHeiti,\\534E\6587\7EC6\9ED1,sans-serif;
+        background: #fafafa;
         font-size: 100%;
         font-weight: 400;
-        margin-left: 30px;
+        padding-left: 30px;
     }
     .wrapper {
         height: 430px;
@@ -114,10 +118,65 @@ body {
             height: 100%;
             text-align: center;
             background: white;
-            border: 1px solid blue;
+            border-left: 1px solid rgba(0,0,0,.1);
+            border-top: 1px solid rgba(0,0,0,.1);
+            border-bottom: 1px solid rgba(0,0,0,.1);
+            text-decoration: none;
             img {
                 margin-top: 50px;
             }
+            .info {
+                h6 {
+                    font-size: 16px;
+                    line-height: 1.2;
+                    color: #424242;
+                }
+                p {
+                    padding-top: 7px;
+                    font-size: 12px;
+                    line-height: 1.2;
+                    color: #b2b2b2;
+                }
+            }
+            .choose {
+
+            }
+            ul {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                height: 18px;
+                li {
+                    border-radius: 50%;
+                    height: 12px;
+                    width: 12px;
+                    border: 3px solid rgba(0, 0, 0, .1);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 6px;
+                    div {
+                        border-radius: 50%;
+                        width: 8px;
+                        height: 8px;
+                        background: url("./img/20X20 (1).jpg");
+                    }
+                }
+                li:hover {
+                    border: 3px solid #b2b2b2; 
+                }
+            }
+            .operator {
+                span {
+                    color: #DE4037;
+                    line-height: 30px;
+                    font-size: 20px;
+                }
+            }
+        }
+        a:nth-child(1) {
+             border-left: none;           
         }
     }
 }
