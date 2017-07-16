@@ -147,6 +147,7 @@ body {
                 justify-content: center;
                 align-items: center;
                 height: 18px;
+                margin: 30px auto;
                 li {
                     border-radius: 50%;
                     height: 12px;
@@ -173,10 +174,105 @@ body {
                     line-height: 30px;
                     font-size: 20px;
                 }
+                span:hover {
+
+                }
             }
         }
         a:nth-child(1) {
              border-left: none;           
+        }
+    }
+}
+
+.official-selection {
+    width: 1220px;
+    height: 920px;
+    margin-top: 30px;
+    border-radius: 4px;
+    overflow: hidden;
+    h5 {
+        line-height: 60px;
+        background: #fafafa;
+        font-size: 100%;
+        font-weight: 400;
+        padding-left: 30px;
+    } 
+    .wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        a {
+            width: 305px;
+            height: 430px;
+            background: white;
+            text-align: center;
+            img {
+
+            }
+        }
+        a:nth-child(1) {
+            width: 610px;
+        }
+        a:nth-child(2) {
+            border: 1px solid red;
+        }
+    }
+}
+
+.brand-selection {
+    width: 1220px;
+    height: 920px;
+    margin-top: 30px;
+    border-radius: 4px;
+    overflow: hidden;
+    h5 {
+        line-height: 60px;
+        background: #fafafa;
+        font-size: 100%;
+        font-weight: 400;
+        padding-left: 30px;
+    } 
+    .wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        a {
+            width: 305px;
+            height: 430px;
+            background: white;
+            text-align: center;
+            img {
+                
+            }
+        }
+        a:nth-child(1) {
+            width: 610px;
+        }
+    }
+}
+
+.smartisan-trends {
+    margin-top: 30px;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 1220px;
+    height: 260px;
+    border: 1px solid rgba(0, 0, 0, 0.1);   
+    h5 {
+        line-height: 60px;
+        background: #fafafa;
+        font-size: 100%;
+        font-weight: 400;
+        padding-left: 30px;
+    }
+    .wrapper {
+        display: flex;
+        overflow: hidden;
+        a {
+            img {
+                width: 305px;
+                overflow: hidden;
+                border-top: 1px solid rgba(0, 0, 0, 0.1); 
+            }
         }
     }
 }

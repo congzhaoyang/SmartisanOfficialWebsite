@@ -108,7 +108,8 @@ body {
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
-        height: 18px; }
+        height: 18px;
+        margin: 30px auto; }
         .hot-commodity .wrapper a ul li {
           border-radius: 50%;
           height: 12px;
@@ -131,5 +132,74 @@ body {
         font-size: 20px; }
     .hot-commodity .wrapper a:nth-child(1) {
       border-left: none; }
+
+.official-selection {
+  width: 1220px;
+  height: 920px;
+  margin-top: 30px;
+  border-radius: 4px;
+  overflow: hidden; }
+  .official-selection h5 {
+    line-height: 60px;
+    background: #fafafa;
+    font-size: 100%;
+    font-weight: 400;
+    padding-left: 30px; }
+  .official-selection .wrapper {
+    display: flex;
+    flex-flow: row wrap; }
+    .official-selection .wrapper a {
+      width: 305px;
+      height: 430px;
+      background: white;
+      text-align: center; }
+    .official-selection .wrapper a:nth-child(1) {
+      width: 610px; }
+    .official-selection .wrapper a:nth-child(2) {
+      border: 1px solid red; }
+
+.brand-selection {
+  width: 1220px;
+  height: 920px;
+  margin-top: 30px;
+  border-radius: 4px;
+  overflow: hidden; }
+  .brand-selection h5 {
+    line-height: 60px;
+    background: #fafafa;
+    font-size: 100%;
+    font-weight: 400;
+    padding-left: 30px; }
+  .brand-selection .wrapper {
+    display: flex;
+    flex-flow: row wrap; }
+    .brand-selection .wrapper a {
+      width: 305px;
+      height: 430px;
+      background: white;
+      text-align: center; }
+    .brand-selection .wrapper a:nth-child(1) {
+      width: 610px; }
+
+.smartisan-trends {
+  margin-top: 30px;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 1220px;
+  height: 260px;
+  border: 1px solid rgba(0, 0, 0, 0.1); }
+  .smartisan-trends h5 {
+    line-height: 60px;
+    background: #fafafa;
+    font-size: 100%;
+    font-weight: 400;
+    padding-left: 30px; }
+  .smartisan-trends .wrapper {
+    display: flex;
+    overflow: hidden; }
+    .smartisan-trends .wrapper a img {
+      width: 305px;
+      overflow: hidden;
+      border-top: 1px solid rgba(0, 0, 0, 0.1); }
 
 /*# sourceMappingURL=index.css.map */
