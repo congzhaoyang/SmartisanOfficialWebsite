@@ -1,0 +1,101 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$bg-gray: #EDEDED;
+
+body {
+    background: $bg-gray;
+}
+
+//.nav-global
+.nav-global {
+    background: #080808;
+    height: 100px;
+    width: 100%;
+    .wrapper {
+        display: block;
+        width: 1220px;
+        margin: 0 auto;
+        border: 1px solid red;
+        div {
+            display: inline-block;
+        }
+        a {
+            line-height: 100px;
+            color: #c8c8c8;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        a:hover {
+            color: #fff;
+        }
+        .logo {
+                a {
+                display: inline-block;
+                background-position-x: 0px;
+                background-position-x: 0px;
+                background: url("./img/global-logo.png") no-repeat 50%;
+                height: 50px;
+                width: 50px;
+            }
+        }
+        .link1 {
+            a {
+                padding: 0 25px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+//nav-sub 
+.nav-sub {
+    width: 100%;
+    height: 90px;
+    
+    .wrapper {
+        width: 1220px;
+        margin: 0 auto;
+        div {
+            display: inline-block;
+            a {
+                line-height: 90px;
+                text-decoration: none;
+                color: #666;
+                font-size: 14px;
+                padding: 0 20px;
+            }
+            a:hover {
+                color: #5079d9;
+            }
+        }
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+    }
+}
+
+//page 
+.page {
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.activity {
+    width: 1220px;
+    height: 200px;
+    display: flex;
+    margin: 27px 0;
+    border-radius: 4px;
+    overflow: hidden;
+    img {
+        box-shadow: inset 0 0 38px rgba(0,0,0,.08);
+        transition: all .15s ease;
+    }
+}
