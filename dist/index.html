@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../src/index.css">
     <link rel="stylesheet" href="../node_modules/swiper/dist/css/swiper.min.css">
     <script src="./bundle.js"></script>
-    <script src="../node_modules/swiper/dist/js/swiper.jquery.min.js"></script>
 </head>
 <body>
     <nav class="nav-global">
@@ -54,20 +53,16 @@
         <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <!--
-                <a class="swiper-slide" href=""><img src="http://via.placeholder.com/1220x500" alt=""></a>
-                <a class="swiper-slide" href=""><img src="http://via.placeholder.com/1220x500" alt=""></a>
-                -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
-                <div class="swiper-slide">Slide 10</div>
+                <a class="swiper-slide" href="">
+                    <img src="../src/img/121.png" alt="">
+                    <img src="../src/img/122.png" alt="">
+                    <img src="../src/img/123.png" alt="">
+                </a>
+                <a class="swiper-slide" href="">
+                    <img src="../src/img/FIIL1.png" alt="">
+                    <img src="../src/img/FIIL2.png" alt="">
+                    <img src="../src/img/FIIL3.png" alt="">
+                </a>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
@@ -75,16 +70,13 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
-
-        <section class="big-img">
-            <a href=""><img src="http://via.placeholder.com/1220x500" alt=""></a>
-            <a href=""><img src="http://via.placeholder.com/1220x500" alt=""></a>
-        </section>
         <section class="activity">
-            <a href=""><img src="../src/img/activity1.png" alt=""></a>
-            <a href=""><img src="../src/img/activity2.jpg" alt=""></a>
-            <a href=""><img src="../src/img/activity3.jpg" alt=""></a>
-            <a href=""><img src="../src/img/activity4.jpg" alt=""></a>
+            <ul>
+                <li><a href=""><img src="../src/img/activity1.png" alt=""></a></li>
+                <li><a href=""><img src="../src/img/activity2.jpg" alt=""></a></li>
+                <li><a href=""><img src="../src/img/activity3.jpg" alt=""></a></li>
+                <li><a href=""><img src="../src/img/activity4.jpg" alt=""></a></li>
+            </ul>
         </section>
         <section class="hot-commodity">
             <h5>热门商品</h5>
@@ -226,10 +218,12 @@
             </ul>
         </section>
         <section class="copyright">
+            <!--暂时写不出来
             <div class="language-switch">
                 <a href="">中文</a>
                 <a href="">English</a>
             </div>
+            -->
             <div class="wrapper">
                 <p class="copyright-content">Copyright © , Smartisan Digital Co., Ltd. All Rights Reserved.北京锤子数码科技有限公司</p>
                 <ul>
@@ -245,6 +239,16 @@
             </div>
         </section>
     </footer>
-
+    <script src="../node_modules/swiper/dist/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 2, 
+    });
+    </script>
 </body>
 </html>
