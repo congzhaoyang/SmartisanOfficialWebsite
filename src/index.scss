@@ -339,14 +339,46 @@ body {
                 }
             }
             .operator {
+                i {
+                    font-size: 14px;
+                    color: #DE4037;
+                    font-weight: bold;
+                    font-family: Arial;
+                    font-style: normal;
+                }
                 span {
                     color: #DE4037;
                     line-height: 30px;
-                    font-size: 20px;
+                    font-size: 18px;
+                    font-family: Arial;
+                    font-weight: bold;
                 }
                 span:hover {
 
                 }
+            }
+            .btn {
+                display: none;
+                //position: absolute;
+                //top: -30px;
+                span {
+                    display: none;
+                    //display: inline-block;
+                    //width: 100px;
+                    //height: 30px;
+                   // border: $test-border;
+                    //margin: 0 5px;
+                    //line-height: 28px;
+                    //vertical-align: middle;
+                    a {
+
+                    }
+                }
+            }
+        }
+        a:hover {
+            .btn {
+
             }
         }
         a:nth-child(1) {
@@ -527,16 +559,44 @@ body {
             text-align: center;
         }
     }
+    /*
     .wrapper {
         display: flex;
         a {
+            display: inline-block;
             width: 305px;
             border-left: 1px solid rgba(0,0,0,.1);
             border-top: 1px solid rgba(0,0,0,.1);
             border-bottom: 1px solid rgba(0,0,0,.1);
+            .info {
+                border: $test-border;
+                width: 245px;
+                height: 96px;
+            }
+
         }
         a:nth-child(1) {
             border-left: none; 
+        }
+    }
+    */
+    ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        li {
+            list-style: none;
+            width: 25%;
+            height: 100%;
+            border: $test-border;
+            a {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                .info {
+
+                }
+            }
         }
     }
 }

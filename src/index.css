@@ -266,10 +266,22 @@ body {
             background: url("./img/20X20 (1).jpg"); }
         .hot-commodity .wrapper a ul li:hover {
           border: 3px solid #b2b2b2; }
+      .hot-commodity .wrapper a .operator i {
+        font-size: 14px;
+        color: #DE4037;
+        font-weight: bold;
+        font-family: Arial;
+        font-style: normal; }
       .hot-commodity .wrapper a .operator span {
         color: #DE4037;
         line-height: 30px;
-        font-size: 20px; }
+        font-size: 18px;
+        font-family: Arial;
+        font-weight: bold; }
+      .hot-commodity .wrapper a .btn {
+        display: none; }
+        .hot-commodity .wrapper a .btn span {
+          display: none; }
     .hot-commodity .wrapper a:nth-child(1) {
       border-left: none; }
 
@@ -387,7 +399,28 @@ body {
   margin-top: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  overflow: hidden; }
+  overflow: hidden;
+    /*
+    .wrapper {
+        display: flex;
+        a {
+            display: inline-block;
+            width: 305px;
+            border-left: 1px solid rgba(0,0,0,.1);
+            border-top: 1px solid rgba(0,0,0,.1);
+            border-bottom: 1px solid rgba(0,0,0,.1);
+            .info {
+                border: $test-border;
+                width: 245px;
+                height: 96px;
+            }
+
+        }
+        a:nth-child(1) {
+            border-left: none; 
+        }
+    }
+    */ }
   .forum-selection .container {
     height: 60px;
     display: flex;
@@ -412,15 +445,19 @@ body {
       color: #5079d9;
       border-radius: 5px;
       text-align: center; }
-  .forum-selection .wrapper {
+  .forum-selection ul {
+    width: 100%;
+    height: 100%;
     display: flex; }
-    .forum-selection .wrapper a {
-      width: 305px;
-      border-left: 1px solid rgba(0, 0, 0, 0.1);
-      border-top: 1px solid rgba(0, 0, 0, 0.1);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-    .forum-selection .wrapper a:nth-child(1) {
-      border-left: none; }
+    .forum-selection ul li {
+      list-style: none;
+      width: 25%;
+      height: 100%;
+      border: 1px solid red; }
+      .forum-selection ul li a {
+        display: inline-block;
+        width: 100%;
+        height: 100%; }
 
 footer {
   background: #FAFAFA;
