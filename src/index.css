@@ -79,18 +79,53 @@ body {
         line-height: 90px;
         padding: 0 20px; }
     .nav-sub .wrapper .right {
-      height: 90px;
+      display: none; }
+
+.nav-sub.active {
+  z-index: 9999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #e7e7e7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  height: 60px;
+  transition: opacity .3s ease-in;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+  transition-delay: initial; }
+  .nav-sub.active .wrapper {
+    width: 1220px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    .nav-sub.active .wrapper div {
+      display: inline-block; }
+      .nav-sub.active .wrapper div a {
+        text-decoration: none;
+        color: #666;
+        font-size: 14px; }
+      .nav-sub.active .wrapper div a:hover {
+        color: #5079d9; }
+    .nav-sub.active .wrapper .left {
+      float: left; }
+      .nav-sub.active .wrapper .left a {
+        line-height: 60px;
+        padding: 0 20px; }
+    .nav-sub.active .wrapper .right {
+      height: 60px;
       display: flex;
       width: 94.45px;
       align-items: center;
       justify-content: space-between; }
-      .nav-sub .wrapper .right a:nth-child(1) {
+      .nav-sub.active .wrapper .right a:nth-child(1) {
         display: inline-block;
         width: 20px;
         height: 20px;
         background: url("./img/account-icon.png");
         background-position: -154px 0; }
-      .nav-sub .wrapper .right a:nth-child(2) {
+      .nav-sub.active .wrapper .right a:nth-child(2) {
         display: inline-block;
         width: 30px;
         height: 20px;
@@ -98,22 +133,27 @@ body {
         background-position: -150px -22px; }
 
 .page {
+  z-index: 0;
   width: 1220px;
   margin: 0 auto; }
 
-.swiper-container .swiper-wrapper a {
-  border-radius: 4px; }
-  .swiper-container .swiper-wrapper a img {
+.swiper-container {
+  z-index: 0; }
+  .swiper-container .swiper-wrapper a {
     border-radius: 4px; }
-  .swiper-container .swiper-wrapper a img:nth-child(2) {
-    position: absolute; }
-  .swiper-container .swiper-wrapper a img:nth-child(3) {
-    position: absolute; }
+    .swiper-container .swiper-wrapper a img {
+      overflow: visible;
+      border-radius: 4px; }
+    .swiper-container .swiper-wrapper a img:nth-child(2) {
+      position: absolute; }
+    .swiper-container .swiper-wrapper a img:nth-child(3) {
+      position: absolute; }
 
 .activity {
   width: 1220px;
   height: 200px;
   display: flex;
+  flex-flow: row wrap;
   margin: 27px 0;
   border-radius: 4px;
   overflow: hidden;

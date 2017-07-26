@@ -1,3 +1,4 @@
+@charset "utf-8";
 
 * {
     margin: 0;
@@ -108,7 +109,51 @@ body {
             }
         }
         .right {
-            height: 90px;
+            display: none;
+        }
+    }
+}
+
+//上部fix布局导航条
+.nav-sub.active {
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #e7e7e7;
+    box-shadow: 0 2px 4px rgba(0,0,0,.04);
+    height: 60px;
+    transition: opacity .3s ease-in;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    transition-delay: initial;
+    .wrapper {
+        width: 1220px;
+        height: 60px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        div {
+            display: inline-block;
+            a {
+                text-decoration: none;
+                color: #666;
+                font-size: 14px;
+            }
+            a:hover {
+                color: #5079d9;
+            }
+        }
+        .left {
+            float: left;
+            a {
+                line-height: 60px;
+                padding: 0 20px;
+            }
+        }
+        .right {
+            height: 60px;
             display: flex;
             width: 94.45px;
             align-items: center;
@@ -133,15 +178,18 @@ body {
 
 //page 
 .page {
+    z-index: 0;
     width: 1220px;
     margin: 0 auto;
 }
 
 .swiper-container {
+    z-index: 0;
     .swiper-wrapper {
         a {
             border-radius: 4px;
             img {
+                overflow: visible;
                 border-radius: 4px;
             }
             img:nth-child(2) {
@@ -158,6 +206,7 @@ body {
     width: 1220px;
     height: 200px;
     display: flex;
+    flex-flow: row wrap;
     margin: 27px 0;
     border-radius: 4px;
     overflow: hidden;
