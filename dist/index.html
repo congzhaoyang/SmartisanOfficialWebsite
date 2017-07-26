@@ -55,14 +55,18 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <a class="swiper-slide" href="">
-                    <img src="../src/img/121.png" alt="">
+                    <img src="http://via.placeholder.com/1220x500" alt="">
+                    <!--
                     <img src="../src/img/122.png" alt="">
                     <img src="../src/img/123.png" alt="">
+                    -->
                 </a>
                 <a class="swiper-slide" href="">
-                    <img src="../src/img/FIIL1.png" alt="">
+                    <img src="http://via.placeholder.com/1220x500" alt="">
+                    <!--
                     <img src="../src/img/FIIL2.png" alt="">
                     <img src="../src/img/FIIL3.png" alt="">
+                    -->
                 </a>
             </div>
             <!-- Add Pagination -->
@@ -253,7 +257,7 @@
 
     $(window).on('scroll', function () {
         var top = $(window).scrollTop();
-        if (top === 0) {
+        if (top <= 90) {
             $('.nav-sub').removeClass('active')
         } else {
             $(".nav-sub").addClass('active')
