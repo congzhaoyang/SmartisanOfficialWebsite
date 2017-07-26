@@ -61,21 +61,41 @@ body {
   height: 90px; }
   .nav-sub .wrapper {
     width: 1220px;
-    margin: 0 auto; }
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
     .nav-sub .wrapper div {
       display: inline-block; }
       .nav-sub .wrapper div a {
-        line-height: 90px;
         text-decoration: none;
         color: #666;
-        font-size: 14px;
-        padding: 0 20px; }
+        font-size: 14px; }
       .nav-sub .wrapper div a:hover {
         color: #5079d9; }
     .nav-sub .wrapper .left {
       float: left; }
+      .nav-sub .wrapper .left a {
+        line-height: 90px;
+        padding: 0 20px; }
     .nav-sub .wrapper .right {
-      float: right; }
+      height: 90px;
+      display: flex;
+      width: 94.45px;
+      align-items: center;
+      justify-content: space-between; }
+      .nav-sub .wrapper .right a:nth-child(1) {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url("./img/account-icon.png");
+        background-position: -154px 0; }
+      .nav-sub .wrapper .right a:nth-child(2) {
+        display: inline-block;
+        width: 30px;
+        height: 20px;
+        background: url("./img/account-icon.png");
+        background-position: -150px -22px; }
 
 .page {
   width: 1220px;
