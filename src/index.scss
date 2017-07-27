@@ -514,6 +514,113 @@ body {
     }
     .wrapper {
         display: flex;
+        border-top: 1px solid rgba(0,0,0,.1);
+        .app-content {
+            width: 305px;
+            height: 360px;
+            border-right: 1px solid rgba(0,0,0,.1);
+            .app-img {
+                margin: 72px auto 0;
+                width: 90px;
+                height: 90px;
+                background: url('./img/Smartisan-Apps.png');
+            }
+            .info {
+                margin: 20px auto 36px;
+                h6 {
+                    overflow: hidden;
+                    font-size: 16px;
+                    line-height: 1.2;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    color: #424242;
+                    font-weight: normal;
+                    text-align: center;
+                }
+                p {
+                    margin: 20px auto 20px;
+                    span {
+                        display: block;
+                        overflow: hidden;
+                        margin-top: 6px;
+                        font-size: 12px;
+                        line-height: 1.2;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        color: #b2b2b2;
+                        text-align: center;
+                    }
+                }
+            }
+            .plantform {
+                display: flex;
+                justify-content: center;
+                span {
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                }
+
+            }
+        }
+        .app-content:nth-child(1) {
+            .app-img {
+                background-position: 0 0;
+            }
+            .plantform {
+                span:nth-child(1) {
+                    background: url("./img/windows-icon.png");
+                    margin-right: 10px;
+                }
+                span:nth-child(2) {
+                    background: url("./img/apple-icon.png");
+                    margin-left: 10px;
+                }
+            }
+        }
+        .app-content:nth-child(2) {
+            .app-img {
+                background-position: -192px 0;
+            }
+            .plantform {
+                span:nth-child(1) {
+                    background: url("./img/android-icon.png");
+                    margin-right: 10px;
+                } 
+                span:nth-child(2) {
+                    background: url("./img/apple-icon.png");
+                    margin-left: 10px;
+                }
+            }
+        }
+        .app-content:nth-child(3) {
+            .app-img {
+                background-position: -564px 0;
+            }
+            .plantform {
+                span:nth-child(1) {
+                    background: url("./img/android-icon.png");
+                } 
+            }
+        }
+        .app-content:nth-child(4) {
+            border-right: none;
+            .app-img {
+                background-position: -374px 0;
+            }
+            .plantform {
+                span:nth-child(1) {
+                    background: url("./img/android-icon.png");
+                    margin-right: 10px;
+                } 
+                span:nth-child(2) {
+                    background: url("./img/apple-icon.png");
+                    margin-left: 10px;
+                }
+            }
+        }
+        /*
+        display: flex;
         a {
             width: 305px;
             border-left: 1px solid rgba(0,0,0,.1);
@@ -523,6 +630,7 @@ body {
         a:nth-child(1) {
             border-left: none; 
         }
+        */
     }
 }
 
@@ -559,27 +667,6 @@ body {
             text-align: center;
         }
     }
-    /*
-    .wrapper {
-        display: flex;
-        a {
-            display: inline-block;
-            width: 305px;
-            border-left: 1px solid rgba(0,0,0,.1);
-            border-top: 1px solid rgba(0,0,0,.1);
-            border-bottom: 1px solid rgba(0,0,0,.1);
-            .info {
-                border: $test-border;
-                width: 245px;
-                height: 96px;
-            }
-
-        }
-        a:nth-child(1) {
-            border-left: none; 
-        }
-    }
-    */
     ul {
         display: flex;
         border-top: 1px solid rgba(0,0,0,.1);

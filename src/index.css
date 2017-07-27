@@ -385,42 +385,96 @@ body {
       border-radius: 5px;
       text-align: center; }
   .smartisan-APPs .wrapper {
-    display: flex; }
-    .smartisan-APPs .wrapper a {
+    display: flex;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    /*
+    display: flex;
+    a {
+        width: 305px;
+        border-left: 1px solid rgba(0,0,0,.1);
+        border-top: 1px solid rgba(0,0,0,.1);
+        border-bottom: 1px solid rgba(0,0,0,.1);
+    }
+    a:nth-child(1) {
+        border-left: none; 
+    }
+    */ }
+    .smartisan-APPs .wrapper .app-content {
       width: 305px;
-      border-left: 1px solid rgba(0, 0, 0, 0.1);
-      border-top: 1px solid rgba(0, 0, 0, 0.1);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-    .smartisan-APPs .wrapper a:nth-child(1) {
-      border-left: none; }
+      height: 360px;
+      border-right: 1px solid rgba(0, 0, 0, 0.1); }
+      .smartisan-APPs .wrapper .app-content .app-img {
+        margin: 72px auto 0;
+        width: 90px;
+        height: 90px;
+        background: url("./img/Smartisan-Apps.png"); }
+      .smartisan-APPs .wrapper .app-content .info {
+        margin: 20px auto 36px; }
+        .smartisan-APPs .wrapper .app-content .info h6 {
+          overflow: hidden;
+          font-size: 16px;
+          line-height: 1.2;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          color: #424242;
+          font-weight: normal;
+          text-align: center; }
+        .smartisan-APPs .wrapper .app-content .info p {
+          margin: 20px auto 20px; }
+          .smartisan-APPs .wrapper .app-content .info p span {
+            display: block;
+            overflow: hidden;
+            margin-top: 6px;
+            font-size: 12px;
+            line-height: 1.2;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: #b2b2b2;
+            text-align: center; }
+      .smartisan-APPs .wrapper .app-content .plantform {
+        display: flex;
+        justify-content: center; }
+        .smartisan-APPs .wrapper .app-content .plantform span {
+          display: inline-block;
+          width: 16px;
+          height: 16px; }
+    .smartisan-APPs .wrapper .app-content:nth-child(1) .app-img {
+      background-position: 0 0; }
+    .smartisan-APPs .wrapper .app-content:nth-child(1) .plantform span:nth-child(1) {
+      background: url("./img/windows-icon.png");
+      margin-right: 10px; }
+    .smartisan-APPs .wrapper .app-content:nth-child(1) .plantform span:nth-child(2) {
+      background: url("./img/apple-icon.png");
+      margin-left: 10px; }
+    .smartisan-APPs .wrapper .app-content:nth-child(2) .app-img {
+      background-position: -192px 0; }
+    .smartisan-APPs .wrapper .app-content:nth-child(2) .plantform span:nth-child(1) {
+      background: url("./img/android-icon.png");
+      margin-right: 10px; }
+    .smartisan-APPs .wrapper .app-content:nth-child(2) .plantform span:nth-child(2) {
+      background: url("./img/apple-icon.png");
+      margin-left: 10px; }
+    .smartisan-APPs .wrapper .app-content:nth-child(3) .app-img {
+      background-position: -564px 0; }
+    .smartisan-APPs .wrapper .app-content:nth-child(3) .plantform span:nth-child(1) {
+      background: url("./img/android-icon.png"); }
+    .smartisan-APPs .wrapper .app-content:nth-child(4) {
+      border-right: none; }
+      .smartisan-APPs .wrapper .app-content:nth-child(4) .app-img {
+        background-position: -374px 0; }
+      .smartisan-APPs .wrapper .app-content:nth-child(4) .plantform span:nth-child(1) {
+        background: url("./img/android-icon.png");
+        margin-right: 10px; }
+      .smartisan-APPs .wrapper .app-content:nth-child(4) .plantform span:nth-child(2) {
+        background: url("./img/apple-icon.png");
+        margin-left: 10px; }
 
 .forum-selection {
   height: 422px;
   margin-top: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  overflow: hidden;
-    /*
-    .wrapper {
-        display: flex;
-        a {
-            display: inline-block;
-            width: 305px;
-            border-left: 1px solid rgba(0,0,0,.1);
-            border-top: 1px solid rgba(0,0,0,.1);
-            border-bottom: 1px solid rgba(0,0,0,.1);
-            .info {
-                border: $test-border;
-                width: 245px;
-                height: 96px;
-            }
-
-        }
-        a:nth-child(1) {
-            border-left: none; 
-        }
-    }
-    */ }
+  overflow: hidden; }
   .forum-selection .container {
     height: 60px;
     display: flex;
