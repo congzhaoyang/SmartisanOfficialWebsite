@@ -188,8 +188,9 @@ body {
     .swiper-wrapper {
         a {
             border-radius: 4px;
+            height: 500px;
             img {
-                overflow: visible;
+                overflow: hidden;
                 border-radius: 4px;
                 width: 1220px;
                 height: 554px;
@@ -198,7 +199,6 @@ body {
             img:nth-child(2) {
                 position: absolute;
                 top: 0;
-                border: 1px solid red;
             }
             img:nth-child(3) {
                 top: 0;

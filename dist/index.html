@@ -32,7 +32,7 @@
             </div>
         </div>
     </nav>
-    <nav class="nav-sub active">
+    <nav class="nav-sub">
         <div class="wrapper">
             <div class="left">
                 <a href="">首页</a>
@@ -729,10 +729,9 @@
         prevButton: '.swiper-button-prev',
         spaceBetween: 2, 
     });
-
     $(window).on('scroll', function () {
-        var top = $(window).scrollTop();
-        if (top <= 90) {
+        var top = $(window).scrollTop()
+        if (top < 90) {
             $('.nav-sub').removeClass('active')
         } else {
             $(".nav-sub").addClass('active')
