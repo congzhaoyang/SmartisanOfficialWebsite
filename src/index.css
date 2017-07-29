@@ -701,7 +701,9 @@ body {
         height: 428px; }
         .brand-selection .wrapper .product-content1 .part img {
           display: block;
-          margin: 30px auto 40px; }
+          margin: 30px auto 40px;
+          width: 206px;
+          height: 206px; }
         .brand-selection .wrapper .product-content1 .part .info h6 {
           margin-top: -34px;
           overflow: hidden;
@@ -856,7 +858,9 @@ body {
         height: 428px; }
         .brand-selection .wrapper .product-content2 .part img {
           display: block;
-          margin: 30px auto 40px; }
+          margin: 30px auto 40px;
+          width: 206px;
+          height: 206px; }
         .brand-selection .wrapper .product-content2 .part .info h6 {
           margin-top: -34px;
           overflow: hidden;
