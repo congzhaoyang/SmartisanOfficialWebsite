@@ -143,11 +143,20 @@ body {
     border-radius: 4px; }
     .swiper-container .swiper-wrapper a img {
       overflow: visible;
-      border-radius: 4px; }
+      border-radius: 4px;
+      width: 1220px;
+      height: 554px;
+      position: relative; }
     .swiper-container .swiper-wrapper a img:nth-child(2) {
-      position: absolute; }
+      position: absolute;
+      top: 0;
+      border: 1px solid red; }
     .swiper-container .swiper-wrapper a img:nth-child(3) {
+      top: 0;
       position: absolute; }
+  .swiper-container .swiper-wrapper a:nth-child(2) img:nth-child(1) {
+    position: absolute;
+    top: 0; }
 
 .activity {
   width: 1220px;

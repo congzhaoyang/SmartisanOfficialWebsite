@@ -191,12 +191,24 @@ body {
             img {
                 overflow: visible;
                 border-radius: 4px;
+                width: 1220px;
+                height: 554px;
+                position: relative;
             }
             img:nth-child(2) {
                 position: absolute;
+                top: 0;
+                border: 1px solid red;
             }
             img:nth-child(3) {
+                top: 0;
                 position: absolute;
+            }
+        }
+        a:nth-child(2) {
+            img:nth-child(1) {
+                position: absolute;
+                top: 0;
             }
         }
     }
