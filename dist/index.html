@@ -698,12 +698,6 @@
             </ul>
         </section>
         <section class="copyright">
-            <!--暂时写不出来
-            <div class="language-switch">
-                <a href="">中文</a>
-                <a href="">English</a>
-            </div>
-            -->
             <div class="wrapper">
                 <p class="copyright-content">Copyright © , Smartisan Digital Co., Ltd. All Rights Reserved.北京锤子数码科技有限公司</p>
                 <ul>
@@ -722,34 +716,33 @@
     <script src="../src/modules/swiper.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        spaceBetween: 2, 
-    });
-    $(window).on('scroll', function () {
-        var top = $(window).scrollTop()
-        if (top < 90) {
-            $('.nav-sub').removeClass('active')
-        } else {
-            $(".nav-sub").addClass('active')
-        }
-    })
-
-/*
-    $('.product-cover-link').hover(
-        function() {
-            $('.detail-btn').css("visibility", "visible")
-            $('.product-price').css("display", "none")
-        },
-        function() {
-            $('.detail-btn').css("visibility", "hidden")
-            $('.product-price').css("display", "inherit")           
-        }
-    )
-    */
+        /*
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 2, 
+        });
+        */
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            paginationClickable: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: 2000,
+            autoplayDisableOnInteraction: false
+        });
+        $(window).on('scroll', function () {
+            var top = $(window).scrollTop()
+            if (top < 90) {
+                $('.nav-sub').removeClass('active')
+            } else {
+                $(".nav-sub").addClass('active')
+            }
+        })
     </script>
 </body>
 </html>
